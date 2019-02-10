@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="Beschreibung" content="ein selbstreferentieller Blog über das Lernen von webdesign und -development from scratch">
-    <meta name="twitter:" content="">
     <title>Der erste zweite Schritt | Kometheus</title>
     <link rel="icon" href="komet.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="ressource/komet.ico" type="image/x-icon"/>
@@ -12,12 +11,15 @@
     <h1> Der erste zweite Schritt </h1>
 <h3>23.01.2019</h3>
   <ul>
-  <p>Heute habe ich diese Website erstellt. Das hosten über github.com geht sehr einfach und kostenfrei, nur leider ist die Seite online noch nicht verfügbar, aber um diesen kleinen Schönheitsfehler kümmere ich mich, sobald es hier etwas zu präsentieren gibt. </p>
+  <p>Heute habe ich diese Website erstellt. Das Hosten über github.com geht sehr einfach und kostenfrei, nur leider ist die Seite online noch nicht verfügbar. Um diesen kleinen Schönheitsfehler kümmere ich mich, sobald es hier etwas zu präsentieren gibt. </p>
   <p> Der Block wird aufzeichnen, was ich gelernt habe und gleichzeitig versuchen diese Kenntnisse auf der Projektseite einzubinden und darzustellen. </p>
     <p> Zuerst habe ich mich mit der nötigen Software ausgestattet: </p>
     <ul> <li> Texteditor: Sublime und Atom </li> <li> Git Bash und GitHub Desktop </li> <li> Chrome (<em>als zweiten Browser</em>) </li> </ul>
+    <!-- In Wahrheit habe ich Chrome nicht installiert. Jedoch hätte ich es für eine gewissenhafte Überprüfung der Plattformkompatibilität der Seite tun sollen. Anderweitig hätte ich einen auch andere Browser verwenden können, vorzugsweise auch einen mit dem selben Framework wie Chrome, beispielsweise Opera. -->
     <p>Dann auf zu dem Webdevelopment-Guide meiner Wahl, nämlich dem von <a href="https://developer.mozilla.org/de/docs/Learn" title="web development guide von Mozilla (deutsch)"> Mozilla.org</a>. Es bietet die Vorteile, dass es kostenlos, umfangreich, akkurat und auf vielen Sprachen verfügbar ist. Und als langjähriger Nutzer von Firefox auf jeder Plattform (von Windows über Ubuntu zu Android) liegt Mozilla auch irgendwo nahe. Nach einem kurzen Überblick habe ich dann bereits mit der Seite angefangen. Nachdem ich die benötigten Elemente herausgesucht und die ersten Zeilen heruntergetippt hatte, machtens sich seltsame Sonderzeichen in der angezeigten Webseite bemerkbar. Danke für deine Umlaute Muttersprache. Der erste Eingriff mithilfe von Find/Replace war eine schöne Erfahrung und jetzt kann ich mich nicht entscheiden, ob ich das "&amp;_uml" beim Schreiben verwende oder versuche jedes mal nach Ergänzungen mit replace zu arbeiten. Sicher hat es für beides entweder Skripe oder einen guten Grund warum dafür keine Skripte genutzt werden. </p>
-    <p> An dieser Stelle meldete sich bereits Sublime zu Wort und erinnerte mich daran, dass es irgendwann mal doch gekauft werden möchte. Das war mir aber eindeutig zu früh, deshalb auf zu Atom. Auf den ersten Blick frisst er zwar mehr Ressourcen, aber hat eine bessere Autovervollständigung und Replace-Funtion. </p>
+    <!-- Wie naiv man sich bereits ein paar Tage später fühlen kann. -->
+    <p>An dieser Stelle meldete sich bereits Sublime zu Wort und erinnerte mich daran, dass es irgendwann mal doch gekauft werden möchte. Das war mir aber eindeutig zu früh, deshalb auf zu Atom. Auf den ersten Blick frisst er zwar mehr Ressourcen, aber hat eine bessere Autovervollständigung und Replace-Funtion.</p>
+     <p>[Edit 10.02.2019] Atom ist ein open-source Editor und aufgrund seiner Modulbauweise enorm anpassungsfähig. Soweit ich das abschätzen kann, habe ich da eine glückliche Wahl getroffen.</p>
     <p>Abschließend eine Auflistung der heute gelernten und genutzen Elemente</p>
     <li> Die Block-Elemente h1-h6, p, ul, ol, li </li>
     <li> Die Inline-Elemente em, strong und den Anker a mit den Attributen href, title, target </li>
@@ -63,12 +65,24 @@
     <li>Nicht dargestellte Kommentare kann man mit &lt;!-- [Kommentar] --&gt; hinterlassen. Der Shortcut in Atom dafür ist strg + #. </li>
     <!--Tatsächlich hat sich hier eins versteckt! -->
     <p>Jetze mache ich mich mal an die Verzeichnisstruktur des Ordners und damit verbunden auch an die Verlinkungsstruktur. Als erstes habe ich die eingebundenen Bilder in einen Ordner "ressource" gepackt und außerdem ein Abbild der index-Datei in einen "project"-Ordner gepackt um Veränderungen an der Seite online testen zu können, ohne die Hauptseite zu ändern. Daraufhin musste ich die Verlinkungen der verschobenen Bilder ändern, was kein Problem war. Jedoch funktionieren die Links jetzt nur auf der Hauptseite und nicht in der projekt-index, (weil relationale links). Wie müssen interne Verlinkungen aufgebaut sein, um aus unterschiedlichen Orten des Verzeichnisses zu funktionieren? Fangen wir erst einmal an mit normalen </p>
-    <li><a href="https://www.google.de/search?q=Rekursion" title"Rekursion"> Hyperlinks</a>. Die zaubert man her mit &lt;a href="[adresse]"> [angezeigter Text]  &lt;/a>". Einnehmen kann es eine ganze Menge an Attributen. Mehr dazu hier: <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/a" title= "Anker"> Ankerelement </a> </li>
+    <li><a href="https://www.google.de/search?q=Rekursion" title"Rekursion"> Hyperlinks</a>. Die zaubert man her mit &lt;a href="[Adresse]"> [angezeigter Text]  &lt;/a>". Einnehmen kann es eine ganze Menge an Attributen. Mehr dazu hier: <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/a" title= "Anker | MDN"> Ankerelement </a> </li>
     <p> </p>
   </ul>
-
-
-
+<h3>09.02.2019</h3>
+  <ul>Was habe ich inzwischen verstanden? HTML (engl. "hypertext markup language") ist eine Auszeichnungssprache und keine Programiersprache. Das bedeutet mit HTML kann man kein ausführbares Programm schreiben. Stattdessen gliedert HTML einen bestimmten Inhalt um ihn für Programme, wie beispielsweise Browser, lesbar zu machen.</ul>
+<h3>10.02.2019 - Kommasetzung</h3>
+  <ol> <p>Mit einem <a href="https://www.duden.de/sprachwissen/rechtschreibregeln/komma" title="Komma | Duden"> Eintrag des Duden </a> wird die Kommasetzung aufgefrischt. Besonders wichtig ist das, weil ich nebenher auch schreibe. </p>
+  <li>Das Komma steht zwischen den Teilen von Reihungen, wenn deren Elemente nicht mit Konjunktionen des Typs <i>und/oder</i> verbunden sind. </li>
+  <li>Das Komma grenzt nachgestellte oder eingeschobene Zusätze vom Rest des Satzes ab.</li>
+  <li>Das Komma grenzt Nebensätze vom übergeordneten Satz ab.</li>
+  <li>Die Regeln in 2 und 3 haben Vorrang vor 1.</li>
+  <li>Manchmal ist nicht klar was für eine Konstruktion vorliegt! Beispiele: </li>
+  <ul> <li>Partizip- und Infinitivgruppen:</li>
+    <ul> <li>Das ist[,] grob gerechnet[,] die Hälfte. (Zwei Kommas oder gar keins!)</li> <li> Sie weigerte sich[,] uns zu helfen.</li> <li>Sie weigerte sich[,] uns zu helfen[,] und ging weg. (Zwei Kommas oder gar keins!)</li></ul>
+    <li>mehrteilige Nebensatzeinleiungen.</li> <ul> <li>Angenommen[,] dass morgen gutes Wetter ist...</li></ul></ul>
+  <li>Hervorhebungen, Ausrufe und Anreden werden mit einem Komma abgegrenzt.</li>
+  <p>Das sind nur die grob vereinfachten Zusammenfassungen der Kommaregeln. Beim Versuch in die genauen Gesetzmäßigkeiten vorzudringen bin ich über Ausfühungen wie folgende gestolpert: "Der Infinitiv mit <i>zu</i> bildet mit einem übergeordneten Verb ein komplexes Prädikat." Ich denke an das Regelwerk wende ich mich erst wieder, sobald ich fragen habe. Bis dahin speichere ich mir auch die <a href="https://de.wikipedia.org/wiki/Liste_von_Konjunktionen_im_Deutschen" title="Liste der Konjunktionen | Wikipedia"> Liste der Konjunktionen</a> hier ab. </p>
+  </ol>
 
 
 </body>
