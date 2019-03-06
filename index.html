@@ -20,7 +20,7 @@
     <p>An dieser Stelle meldete sich bereits Sublime zu Wort und erinnerte mich daran, dass es irgendwann mal doch gekauft werden möchte. Das war mir aber eindeutig zu früh, deshalb auf zu Atom. Auf den ersten Blick frisst er zwar mehr Ressourcen, aber hat eine bessere Autovervollständigung und Replace-Funtion.</p>
      <p>[Edit 10.02.2019] Atom ist ein open-source Editor und aufgrund seiner Modulbauweise enorm anpassungsfähig. Soweit ich das abschätzen kann, habe ich da eine glückliche Wahl getroffen.</p>
     <p>Abschließend eine Auflistung der heute gelernten und genutzen Elemente</p>
-    <ul <li> Die Blockelemente h1-h6, p, ul, ol, li </li>
+    <ul> <li> Die Blockelemente h1-h6, p, ul, ol, li </li>
     <li> Die Inlineelemente em, strong und den Anker a mit den Attributen href, title, target </li>
     <li> Den Unterschied zwischen Blockelementen, Inlinelementen und Attributen</li> </ul>
     <p>Das war es auch für heute, mehr in den nächten Tagen.</p>
@@ -52,7 +52,7 @@
      <li>Die Icons einer Webseite bestimmt man mit &lt;link rel="shortcut icon" href="[link zum Icon]" type="image/x-icon" . Selbstversändlich muss man zusätzlich das gewünschte Icon in den Ordner packen, wenn man darauf verweisen möchte. Was der type soll verstehe ich nicht. Da er im seiteneigenen Quellcode nicht auftaucht, nehme ich an, dass es eine veraltete Information ist. Außerdem kann man eine Vielzahl unterschiedlicher Icons einstellen, um zum Beispiel auf iPad-Bildschirmen noch ein gutes Bild abzugeben. Zum Glück ist das für mich bisher irrelevant, die Erstellung meines kleinen Kometen hat mich bereits genug Zeit gekostet. Dafür ist er hübsch und ich denke, dass ich jetzt seehr effizient 8-bit Grafiken erstellen kann. Ich probiere das gleich mal aus. Zuerst brauche ich ein Bild von einem süßen Hund: </li> </ul>
      <img src="https://www.agila.de/images/magazin/full/den-hund-umbenennen-full-818x522.jpg" alt="HD-Hund"/>
      <p> Jetzt wird der Hund zu einem süßen Pixelhund:</p>
-     <img src="ressource/hund verpixelt.jpg" alt="Pixelhund"/>
+     <img src="https://kometheus.github.io/ressource/hund%20verpixelt.jpg" alt="Pixelhund"/>
      <p> Das ging jetzt trotz einer kleinen Schwierigkeit sehr schnell und das Einbinden von Bildern funktioniert jetzt auch, sowohl von internen als auch externen. </p>
      <ul><li> CSS und JavaScript sind notwendig um alles aufändigere auf der Webseite zu implementieren, sei es ein cooles Design oder interaktive Elemente. Dazu werden CSS-Dateien im head eingebunden, um zu vermeiden, dass die Seite erstmal hässlich lädt und danach schön aufleuchtet: &lt;link rel="stylesheet" href="[Dateiname].css"> </li>
      <li>JavaScripte werden in der Regel am Ende im body eingebunden, damit ihre längere Ladezeit den Aufbau der Seite nicht verzögert: &lt;script src="[dateiname].js">&lt;/script></li> </ul>
@@ -64,7 +64,7 @@
     <li>Nicht dargestellte Kommentare kann man mit &lt;!-- [Kommentar] --&gt; hinterlassen. Der Shortcut in Atom dafür ist strg + #. </li> </ul>
     <!--Tatsächlich hat sich hier eins versteckt! -->
     <p>Jetze mache ich mich mal an die Verzeichnisstruktur des Ordners und damit verbunden auch an die Verlinkungsstruktur. Als erstes habe ich die eingebundenen Bilder in einen Ordner "ressource" gepackt und außerdem ein Abbild der index-Datei in einen "project"-Ordner gepackt um Veränderungen an der Seite online testen zu können, ohne die Hauptseite zu ändern. Daraufhin musste ich die Verlinkungen der verschobenen Bilder ändern, was kein Problem war. Jedoch funktionieren die Links jetzt nur auf der Hauptseite und nicht in der projekt-index, (weil relationale links). Wie müssen interne Verlinkungen aufgebaut sein, um aus unterschiedlichen Orten des Verzeichnisses zu funktionieren? Fangen wir erst einmal an mit normalen </p>
-    <ul> <li><a href="https://www.google.de/search?q=Rekursion" title"Rekursion"> Hyperlinks</a>. Die zaubert man her mit &lt;a href="[Adresse]"> [angezeigter Text]  &lt;/a>". Einnehmen kann es eine ganze Menge an Attributen. Mehr dazu hier: <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/a" title= "Anker | MDN"> Ankerelement </a> </li></ul>
+    <ul> <li><a href="https://www.google.de/search?q=Rekursion" title="Rekursion"> Hyperlinks</a>. Die zaubert man her mit &lt;a href="[Adresse]"> [angezeigter Text]  &lt;/a>". Einnehmen kann es eine ganze Menge an Attributen. Mehr dazu hier: <a href="https://developer.mozilla.org/de/docs/Web/HTML/Element/a" title= "Anker | MDN"> Ankerelement </a> </li></ul>
 <h3>09.02.2019</h3>
   <p>Was habe ich inzwischen verstanden? HTML (engl. "hypertext markup language") ist eine Auszeichnungssprache und keine Programiersprache. Das bedeutet mit HTML kann man kein ausführbares Programm schreiben. Stattdessen gliedert HTML einen bestimmten Inhalt um ihn für Programme, wie beispielsweise Browser, lesbar zu machen.</p>
 <h3>10.02.2019 - Kommasetzung</h3>
